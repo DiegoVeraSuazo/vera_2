@@ -68,7 +68,7 @@ public class LecturaEscrituraTexto {
         System.out.println("Selecciona la operacion a realizar");
         System.out.println("1 - Leer Archivo de Texto");
         System.out.println("2 - Agregar Oraciones");
-        System.out.println("3 - Quitar Oraciones");
+        System.out.println("3 - Quitar Oraciones (Usar con Precaucion)");
 
         System.out.println("4 - Salir del Menu");
         
