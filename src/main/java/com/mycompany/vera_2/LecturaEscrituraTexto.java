@@ -16,7 +16,8 @@ public class LecturaEscrituraTexto {
         menu();
                 
     }
-    
+
+    //Metodo que agrega una oracion o palabra en una nueva linea del archivo texto.txt
     public static String agregarOraciones(String oracion){
         String ruta = "texto.txt";
         Path archivo = Paths.get(ruta);
@@ -32,7 +33,8 @@ public class LecturaEscrituraTexto {
         }
         return oracion;
     }
-    
+
+    //Metodo que lee el contenido del archivo.txt
     public static void leerArchivo(String ruta){
         Path archivo = Paths.get(ruta);
         String texto = "";
@@ -43,7 +45,8 @@ public class LecturaEscrituraTexto {
             System.out.println("No se pudo acceder al archivo");
         }
     }
-    
+
+    //Metodo que quita palabras u oraciones del archivo texto.txt(Usar con precaucion!!)
     public static String quitarOraciones(String oracion){
         String ruta = "texto.txt";
         Path archivo = Paths.get(ruta);
@@ -59,7 +62,8 @@ public class LecturaEscrituraTexto {
         }
         return oracion;
     }
-    
+
+    //Metodo que llama a un menu
     public static void menu(){
         System.out.println("Selecciona la operacion a realizar");
         System.out.println("1 - Leer Archivo de Texto");
@@ -84,6 +88,7 @@ public class LecturaEscrituraTexto {
         } while (ejec); 
     }
 
+    //Metodo que llama a la acción que se eligio en el menu
     private static void seleccion(int opcion, boolean ejec) {
         Scanner teclado = new Scanner(System.in);
             switch(opcion){
@@ -111,7 +116,7 @@ public class LecturaEscrituraTexto {
     private static int validarNumero() {
         Scanner teclado = new Scanner(System.in);
 
-        Integer entrada = 0;
+        int entrada = 0;
         Boolean valido = true;
         do {
             try {
